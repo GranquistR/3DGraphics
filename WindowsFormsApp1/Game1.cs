@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
     public partial class Game1 : Form
     {
         FpsCounter fps = new FpsCounter();
+        Rectangle viewport = new Rectangle(0, 0, 1024, 576);
         
         public Game1()
         {
@@ -38,6 +39,7 @@ namespace WindowsFormsApp1
         {
             Graphics g = e.Graphics;
             
+            g.DrawRectangle(Pens.Black, viewport);  
             g.DrawString(fps.averageFps.ToString(), new Font("Arial", 16), Brushes.Red, 0, 0);
            
         }
