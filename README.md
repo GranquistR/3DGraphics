@@ -1,3 +1,5 @@
-# WindowsFormGame
+# A 3D Graphics Test
 
-A template for a windows for game with graphics and an FPS counter
+I want to try and create a 3D Graphics engine that will work like the OG Doom's engine. IE take in a 2D texture and convert it to a 3D enviroment.
+
+Lets hope it works :P
