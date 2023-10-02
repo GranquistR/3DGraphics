@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp1.Interfaces;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.Scripts
 {
-    internal class FpsCounter
+    internal class FpsCounter : GameScript
     {
         private long lastTime = DateTime.Now.Ticks;
         private long thisTime = DateTime.Now.Ticks;
@@ -17,7 +18,7 @@ namespace WindowsFormsApp1
 
         public int averageFps = 0;
 
-        public int Update()
+        public void Update()
         {
             thisTime = DateTime.Now.Ticks;
             deltaTime = thisTime - lastTime;
@@ -31,9 +32,11 @@ namespace WindowsFormsApp1
             {
                 averageFps = fpsTotal / averageCounter;
             }
-
-            return averageFps;
         }
 
+        public void Start()
+        {
+
+        }
     }
 }

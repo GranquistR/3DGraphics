@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Interfaces;
+using WindowsFormsApp1.Scripts;
 
 namespace WindowsFormsApp1
 {
@@ -22,6 +24,8 @@ namespace WindowsFormsApp1
             timer.Interval = 1;
             timer.Tick += new EventHandler(TimerCallback);
             timer.Start();
+
+            fps.Start();
             
             InitializeComponent();
         }
@@ -29,7 +33,7 @@ namespace WindowsFormsApp1
         private void TimerCallback(object sender, EventArgs e)
         {
             Invalidate();
-            
+
             fps.Update();
 
             return;

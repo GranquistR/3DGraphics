@@ -52,7 +52,8 @@
     <Compile Include="Game1.Designer.cs">
       <DependentUpon>Game1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FpsCounter.cs" />
+    <Compile Include="Interfaces\GameScript.cs" />
+    <Compile Include="Scripts\FpsCounter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game1.resx">
