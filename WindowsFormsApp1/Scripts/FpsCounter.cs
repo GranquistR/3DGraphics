@@ -7,7 +7,7 @@ using WindowsFormsApp1.Interfaces;
 
 namespace WindowsFormsApp1.Scripts
 {
-    internal class FpsCounter : GameScript
+    internal class FpsCounter : IScript
     {
         private long lastTime = DateTime.Now.Ticks;
         private long thisTime = DateTime.Now.Ticks;

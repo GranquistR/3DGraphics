@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Interfaces
 {
-    internal interface GameScript
+    internal interface IScript
     {
 
         //updates once per frame

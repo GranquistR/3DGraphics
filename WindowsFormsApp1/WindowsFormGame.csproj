@@ -52,7 +52,10 @@
     <Compile Include="Game1.Designer.cs">
       <DependentUpon>Game1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\GameScript.cs" />
+    <Compile Include="Interfaces\IScript.cs" />
+    <Compile Include="Objects\CustomTypes.cs" />
+    <Compile Include="Objects\Player.cs" />
+    <Compile Include="Rendering\Rendering2D.cs" />
     <Compile Include="Scripts\FpsCounter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
